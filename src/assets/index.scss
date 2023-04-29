@@ -1,0 +1,82 @@
+
+:root{
+  --top-header-height: 0px;
+  --rev-header-height: 75px;
+  --partner-header-height: 75px;
+  --color-menu: #272b41;
+  --color-menu-hover: var(--color-primary);
+  --color-menu-active: var(--color-primary);
+  --color-add-listing-button-text: #ffffff;
+  --color-add-listing-button-text-hover: #ffffff;
+  --bgcolor-add-listing-button: var(--color-primary);
+  --bgcolor-add-listing-button-hover: #272b41;
+  --banner-bg-opacity: rgb(55, 125, 255,0.7);
+  --color-banner_title: #ffffff;
+  --color-breadcrumb-link: #f9f9fa;
+  --color-breadcrumb-link-hover: var(--color-primary);
+  --color-breadcrumb-active: rgb(255, 255, 255, 0.7);
+  --color-breadcrumb_separator: #f9f9fa;
+  --bgcolor-footer:  #0e1017;
+  --color-footer-divider: rgb(255, 255, 255, 0.05);
+  --color-footer-title: rgb(255, 255, 255, 0.9);
+  --color-footer-text: rgb(255, 255, 255, 0.4);
+  --color-footer-link: rgb(255, 255, 255, 0.4);
+  --color-footer-link-hover: #ffffff;
+  --color-success: #53ca2e;
+  --color-info: #2c99ff;
+  --color-danger: #f51957;
+  --color-dark: #272b41;
+  --color-success-rgb:83, 202, 46;
+  --color-info-rgb:44, 153, 255;
+  --color-warning-rgb:242, 176, 30;
+  --color-danger-rgb:245, 25, 87;
+  --color-dark-rgb:39, 43, 65;
+  --color-white-rgb: 255, 255, 255;
+  --color-gray: #565865;
+  --color-light-gray: #929BB1;
+  --color-light: #9299b8;
+  --color-lighten: #7a82a6;
+  --color-lighten-x: #5d658c;
+  --color-white: #FFFFFF;
+  --color-body: #565865;
+  --footer-bg-color: hsl(224, 19%, 15%);
+  --color-border-solid: #f2f2f2;
+  --color-border: #e9ebf4;
+  --color-border-light: #e3e6ef;
+  --color-border-lighter: #cbd0e3;
+  --color-border-gray: #acb3cf;
+  --color-bg-normal: #f9f9fa;
+  --color-bg-light: #f6f7f8;
+  --color-bg-lighter: #f5f5f6;
+  --color-bg-light-gray: #f0f0f2;
+  --color-primary: #040c44;
+  --color-primary-rgb: 4, 12, 68;
+  --color-secondary: #040c44;
+  --color-secondary-rgb: 4, 12, 68;
+  --color-success: #53ca2e;
+  --color-info: #2c99ff;
+  --color-danger: #f51957;
+  --color-warning: #fa8b0c;
+  @media screen and (min-width: 1200px){
+    --top-header-height: 42px;
+    --rev-header-height: 106px;
+    --partner-header-height: 106px;
+  }
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './lib/owl.carousel.min.css';
+@import './lib/directorist-icon.css';
+@import './lib/frontend-lite.min.css';
+@import './lib/directorist.css';
+@import './lib/style.css';
+@import "./common.scss";
+@import "./wrappers.scss";
+@import "./base.scss";
+@import "./typography.scss";
+@import "./_helpers";
+@import "./fonts";
+
+
+@import "react-toastify/dist/ReactToastify.min.css";
+

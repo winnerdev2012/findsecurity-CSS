@@ -1,0 +1,221 @@
+@import 'assets/common.scss';
+.Grbutton {
+  $transitionTime: .3s;
+  @include outline(0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background: $black;
+  min-height: 53px;
+  border: none;
+  border-radius: 67px;
+  cursor: pointer;
+  transition: background-color $transitionTime ease-in-out, color $transitionTime ease-in-out;
+  position: relative;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 18.72px;
+  line-height: 20.03px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  @include breakpoint(under1400) {
+    font-size: 16px;
+    padding: 5px 15px;
+    min-height: 43px;
+  }
+  &.header-v{
+    text-transform: uppercase;
+    border-radius: 61px;
+    font-size: 16px;
+    font-family: 'Space Grotesk';
+    @include breakpoint(under1400) {
+      font-size: 16px;
+      padding: 10px 20px;
+      min-height: unset;
+    }
+  }
+  &:hover {
+    background: $white;
+    color: $black;
+    .icon{
+      path{
+        fill: $black;
+      }
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:disabled{
+    cursor: initial;
+    background-color:#121212 ;
+    color: #646464;
+    &:before, &:after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 2px;
+      background: #646464;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg,
+                            #E8A3FF 0%,
+                            #A8BFFF 15%,
+                            #2EFCA8 45%,
+                            #A8BFFF 75%,
+                            #E8A3FF 90%,
+                            #E8A3FF 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 4px;
+    background-color: $white;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $transitionTime ease-in-out;
+  }
+  .icon{
+    flex: 0 0 auto;
+    path{
+      transition: fill $transitionTime ease-in-out;
+    }
+  }
+}
+
+// new Rev GRbutton
+// or import all omponent <GrbuttonRev>
+// or use button(any other tag) with classNae="GrbuttonRev"
+.GrbuttonRev {
+  $transitionTime: .3s;
+  @include outline(0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: $black;
+  border: none;
+  border-radius: 61px;
+  cursor: pointer;
+  transition: background-color $transitionTime ease-in-out, color $transitionTime ease-in-out;
+  position: relative;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  white-space: nowrap;
+  &.v-gray{
+    background: $darkgrey;
+  }
+  &.v-big{
+    font-size: 16px;
+    border-radius: 88px;
+    padding: 20px 30px;
+    @include breakpoint(xl){
+      font-size: 32px;
+      padding: 30px 60px;
+    }
+    &:before {
+      padding: 5px;
+    }
+    &:after {
+      padding: 5px;
+    }
+  }
+  &.v-md{
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    @include breakpoint(xl){
+      font-size: 18px;
+    }
+    // &:before {
+    //   padding: 2px;
+    // }
+    // &:after {
+    //   padding: 2px;
+    // }
+  }
+  &:hover {
+    background: $white;
+    color: $black;
+    .icon{
+      path{
+        fill: $black;
+      }
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:disabled{
+    cursor: initial;
+    background-color: #7A7A7A;
+    color: #D8D8D8;
+    &:before, &:after {
+      opacity: 0;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg,
+                            #E8A3FF 0%,
+                            #A8BFFF 15%,
+                            #2EFCA8 45%,
+                            #A8BFFF 75%,
+                            #E8A3FF 90%,
+                            #E8A3FF 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background-color: $white;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $transitionTime ease-in-out;
+  }
+  .icon{
+    flex: 0 0 auto;
+    path{
+      transition: fill $transitionTime ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.widget_social {
+  .social-list {
+    li {
+      i.map-solid {
+        --directorist-icon: url('../../../assets/images/line-awesome/svgs/map-solid.svg');
+      }
+      i.user-plus-solid {
+        --directorist-icon: url('../../../assets/images/line-awesome/svgs/user-plus-solid.svg');
+      }
+      i.star-solid {
+        --directorist-icon: url('../../../assets/images/line-awesome/svgs/star-solid.svg');
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.btn-primary {
+  color: var(--color-white);
+  color: white !important;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  &:active {
+    background-color: rgba(var(--color-primary-rgb), 0.9) !important;
+    border-color: rgba(var(--color-primary-rgb), 0.9) !important;
+  }
+  &:focus {
+    background-color: rgba(var(--color-primary-rgb), 0.9) !important;
+    border-color: rgba(var(--color-primary-rgb), 0.9) !important;
+  }
+  &:hover {
+    background-color: rgba(var(--color-primary-rgb), 0.9) !important;
+    border-color: rgba(var(--color-primary-rgb), 0.9) !important;
+  }
+}
+.access_area {
+  ul {
+    li {
+      a.access-link {
+        .directorist-icon-mask {
+          --directorist-icon: url('../../../assets/images/line-awesome/svgs/plus-solid.svg');
+        }
+      }
+    }
+  }
+}

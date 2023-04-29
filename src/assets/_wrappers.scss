@@ -1,0 +1,27 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: $maxcontentwidth;
+
+  
+  @include breakpoint(lg) {
+    max-width: 1040px;
+  }
+  
+  @media (min-width: 3200px) {
+    max-width: $maxcontentwidth;
+  }
+}
+
+.UserSide__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: 901px) {
+    max-width: 900px;
+  }
+}
+
+.sm-only {
+  @include breakpoint(xl) {
+    display: none;
+  }
+}

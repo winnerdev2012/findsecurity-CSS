@@ -1,0 +1,5 @@
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "yarn build storybook -s public",
+    "serve-storybook": "serve storybook-static"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"

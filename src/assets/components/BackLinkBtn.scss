@@ -1,0 +1,63 @@
+@import 'src/assets/common.scss';
+
+.BackLinkBtn {
+
+  position: absolute;
+  left: 25px;
+  top: 5px;
+  .back-link-btn{
+    $transitionTime: .3s;
+    @include outline(0);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;;
+    background: $darkgrey;
+    // border: 2px solid $darkgrey;
+    @include gradientBorder(2px);
+    height: 30px;
+    width: 30px;
+    // background: $black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color $transitionTime ease-in-out, color $transitionTime ease-in-out;
+    position: relative;
+    margin-right: 10px;
+    padding: 0 2px;
+
+    .icon{
+      flex: 0 0 auto;
+      width: 10px;
+      height: 10px;
+      path{
+        stroke: $white;
+        transition: stroke $transitionTime ease-in-out;
+      }
+    }
+  }
+  .back-link-text{
+    @include outline(0);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 106%;
+    color: $white;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+  &:hover {
+    .back-link-btn{
+      background: $white;
+      color: $black;
+      .icon{
+        path{
+          stroke: $black;
+        }
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
