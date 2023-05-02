@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/components-Header-LogoWrapper-LogoWrapper-stories.021bc0b7.chunk.css","mappings":";AAAA","sources":["webpack://findsecurity/./src/components/Logo/Logo.scss"],"sourcesContent":["img.nav-logo {\r\n  padding-bottom: 0;\r\n  max-width: 131px;\r\n}\r\n"],"names":[],"sourceRoot":""}
